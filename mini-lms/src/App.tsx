@@ -10,6 +10,9 @@ function Estudiante(props: {nombre: string}) {
   );
 }
 
+function Promedio(){
+  
+}
 
 function Saludo() {
   return(
