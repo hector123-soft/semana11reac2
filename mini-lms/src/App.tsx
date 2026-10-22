@@ -10,8 +10,11 @@ function Estudiante(props: {nombre: string}) {
   );
 }
 
-function Promedio(){
-  
+function Promedio({nota1,nota2,nota3}: {nota1:number;nota2:number}){
+  const prom = (nota1+nota2+nota3)/3;
+    return (
+      <p> El promedio es: {prom.toFixed(2)}</p>
+    );
 }
 
 function Saludo() {
@@ -31,6 +34,7 @@ function App() {
     <p> Estudiante nombre = 'Pedro'</p>
     <p> Estudiante nombre = 'Luis'</p>
     <p> Estudiante nombre = 'Maria'</p>
+    <Promedio nota1={14} nota2={12} nota3={10}/>
     </div>
   );
 }
